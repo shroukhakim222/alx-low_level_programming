@@ -15,7 +15,7 @@ int main(void)
 		'-', ' ', 'D', 'o', 'r', 'a', ' ', 'K',
 		'o', 'r', 'p', 'a', 'r', ',', ' ', '2', '0',
 		'1', '5', '-', '1', '0', '-', '1', '9'};
-	int len = sizeof(st) - 1;
+	int len = sizeof(st);
 	int i;
 
 	for (i = 0; i < len; i++)
