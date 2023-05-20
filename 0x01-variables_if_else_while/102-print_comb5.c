@@ -19,9 +19,15 @@ int main(void)
 				for (; x < 58; x++)
 				{
 					if (y == 48)
+					{
 						x = 49;
+						x++;
+					}
 					else
+					{
 						x = 48;
+						x++;
+					}
 					putchar(i);
 					putchar(j);
 					putchar(' ');
