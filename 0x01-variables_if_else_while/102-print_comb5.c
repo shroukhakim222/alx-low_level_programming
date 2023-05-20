@@ -18,20 +18,20 @@ int main(void)
 			{
 				for (x = i; x < 58; x++)
 				{
-					if (y == 48 && x == i)
+					if (x == i)
 						x++;
 					putchar(i);
 					putchar(j);
 					putchar(' ');
 					putchar(y);
 					putchar(x);
-					if (i == 57 && i == y && i == x)
-						break;
-					else
+					if (i != 57 && i != y && i != x)
 					{
 						putchar(',');
 						putchar(' ');
 					}
+					else
+						break;
 				}
 			}
 		}
