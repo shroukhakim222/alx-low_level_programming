@@ -16,18 +16,14 @@ int main(void)
 		{
 			for (y = i; y < 58; y++)
 			{
-				if (y == 48)
-					x = j + 1;
-				else
-					x = 48;
-				for (; x < 58; x++)
+				for (x = j + 1; x < 58; x++)
 				{
 					putchar(i);
 					putchar(j);
 					putchar(' ');
 					putchar(y);
 					putchar(x);
-					if (i == 57 && i == y && j == 56)
+					if (i == 57 && x == 57)
 						break;
 					putchar(',');
 					putchar(' ');
