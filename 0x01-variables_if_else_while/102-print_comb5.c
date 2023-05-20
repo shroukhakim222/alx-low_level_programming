@@ -23,7 +23,6 @@ int main(void)
 					if (iy == 0)
 					{
 						x = j + 1;
-						iy++;
 					}
 					putchar(i);
 					putchar(j);
