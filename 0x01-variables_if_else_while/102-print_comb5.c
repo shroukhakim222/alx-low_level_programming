@@ -14,9 +14,10 @@ int main(void)
 	{
 		for (j = 48; j < 58; j++)
 		{
-			for (y = i; y < 58; y++)
+			x = j + 1;
+			for (y = i; y < 58;)
 			{
-				for (x = j + 1; x < 58; x++)
+				for (; x < 58; x++)
 				{
 					putchar(i);
 					putchar(j);
@@ -28,6 +29,8 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+				y++;
+				x = 48;
 			}
 		}
 	}
