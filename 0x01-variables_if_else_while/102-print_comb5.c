@@ -16,8 +16,10 @@ int main(void)
 		{
 			for (y = 48; y < 58; y++)
 			{
-				for (x = j + 1; x < 58; x++)
+				for (x = 48; x < 58; x++)
 				{
+					if (y == 48)
+						x = j + 1;
 					putchar(i);
 					putchar(j);
 					putchar(' ');
