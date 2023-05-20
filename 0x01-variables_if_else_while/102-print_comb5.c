@@ -24,7 +24,7 @@ int main(void)
 					putchar(' ');
 					putchar(y);
 					putchar(x);
-					if (i == 57 && j == 57)
+					if (j == 56 && x == 57)
 						break;
 					putchar(',');
 					putchar(' ');
