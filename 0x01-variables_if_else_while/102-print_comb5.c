@@ -20,7 +20,7 @@ int main(void)
 				for (x = 48; x < 58; x++)
 				{
 					iy = y;
-					while (iy = 0)
+					while (iy == 0)
 					{
 						x = j + 1;
 						iy++;
