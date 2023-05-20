@@ -25,9 +25,11 @@ int main(void)
 					putchar(' ');
 					putchar(y);
 					putchar(x);
-					if (i != 57 && y != 57)
+					if (i == y && i == x)
+						break;
+					else
 					{
-						putchar(',');
+						putchar('.');
 						putchar(' ');
 					}
 				}
