@@ -19,10 +19,11 @@ int main(void)
 			{
 				for (x = 48; x < 58; x++)
 				{
-					iy = y;
-					if (iy == 0)
+					iy = j;
+					while (y == 0 && iy >= 0)
 					{
-						x = j + 1;
+						x++;
+						iy--;
 					}
 					putchar(i);
 					putchar(j);
