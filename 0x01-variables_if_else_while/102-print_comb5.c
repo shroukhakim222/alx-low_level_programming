@@ -9,6 +9,7 @@
 int main(void)
 {
 	int i, j, y, x;
+	int iy;
 
 	for (i = 48; i < 58; i++)
 	{
@@ -16,10 +17,14 @@ int main(void)
 		{
 			for (y = 48; y < 58; y++)
 			{
-				for (x = j + 1; x < 58; x++)
+				for (x = 48; x < 58; x++)
 				{
-					if (y != 48)
-						x--;
+					iy = y;
+					while (iy = 0)
+					{
+						x = j + 1;
+						iy++;
+					}	
 					putchar(i);
 					putchar(j);
 					putchar(' ');
