@@ -16,20 +16,21 @@ int main(void)
 		{
 			for (y = 48; y < 58; y++)
 			{
-				for (x = 48; x < 58; x++)
+				for (; x < 58; x++)
 				{
-					if (x != 48 && y != 48)
+					if (y == 48)
+						x = 49;
+					else
+						x = 48;
+					putchar(i);
+					putchar(j);
+					putchar(' ');
+					putchar(y);
+					putchar(x);
+					if (i != 57 && j != 56)
 					{
-						putchar(i);
-						putchar(j);
+						putchar(',');
 						putchar(' ');
-						putchar(y);
-						putchar(x);
-						if (i != 57 && j != 56)
-						{
-							putchar(',');
-							putchar(' ');
-						}
 					}
 				}
 			}
