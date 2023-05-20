@@ -18,7 +18,7 @@ int main(void)
 			{
 				for (x = 48; x < 58; x++)
 				{
-					if (y == 48 & x == 48)
+					if (y == 48 && x == 48)
 						x++;
 					putchar(i);
 					putchar(j);
