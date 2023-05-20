@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (j = 48; j < 58; j++)
 		{
-			for (y = 48; y < 58; y++)
+			for (y = i; y < 58; y++)
 			{
 				if (y == 48)
 					x = j + 1;
