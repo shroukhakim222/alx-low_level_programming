@@ -22,20 +22,17 @@ void times_table(void)
 				_putchar(48);
 				_putchar(',');
 			}
+			mul = i * j;
+			fst = mul / 10;
+			lst = mul % 10;
+			if (fst == 0)
+				_putchar(' ');
 			else
 			{
-				mul = i * j;
-				fst = mul / 10;
-				lst = mul % 10;
-				if (fst == 0)
-					_putchar(' ');
-				else
-				{
-					_putchar(' ');
-					_putchar(fst + 48);
-					_putchar(lst + 48);
-					_putchar(',');
-				}
+				_putchar(' ');
+				_putchar(fst + 48);
+				_putchar(lst + 48);
+				_putchar(',');
 			}
 		}
 		_putchar('\n');
