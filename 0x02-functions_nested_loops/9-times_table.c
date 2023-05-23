@@ -20,9 +20,9 @@ void times_table(void)
 			mul = i * j;
 			fst = mul / 10;
 			lst = mul % 10;
-			if (fst == 0)
+			if (fst == 0 && j != 0)
 				_putchar(' ');
-			else
+			else if (j != 0)
 				_putchar(fst + '0');
 			_putchar(lst + '0');
 			if (j == 9)
