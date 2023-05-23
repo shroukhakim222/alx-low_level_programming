@@ -26,6 +26,8 @@ void times_table(void)
 			else
 				_putchar(fst + '0');
 			_putchar(lst + '0');
+			if (j == 9)
+				break;
 			_putchar(',');
 		}
 		_putchar('\n');
