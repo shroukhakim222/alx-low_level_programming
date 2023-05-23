@@ -3,9 +3,10 @@
 
 /**
  * print_sign - print number sign
- * @c: function parameter
+ * @n: function parameter
  *
- * Return: 1 if positive 0 if zero and -1 if negative
+ * Return: 1 if positive 0 if zero
+ * and -1 if negative
  */
 
 int print_sign(int n)
