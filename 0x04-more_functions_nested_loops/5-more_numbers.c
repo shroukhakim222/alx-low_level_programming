@@ -15,10 +15,10 @@ void more_numbers(void)
 	{
 		for (i = 48; i < 50; i++)
 		{
-			if (i == 50 && j == 52)
-				break;
 			for (j = 48; j < 58; j++)
 			{
+				if (i == 49 && j == 53)
+					break;
 				if (i != 48)
 					_putchar(i);
 				_putchar(j);
