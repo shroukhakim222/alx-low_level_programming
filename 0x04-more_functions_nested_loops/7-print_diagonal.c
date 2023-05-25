@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * print_diagonal - draws a diagonal line 
+ * print_diagonal - draws a diagonal line
  * @n:  is the number of times the character \
- * 
+ *
  * Return: diagonal line
  */
 
