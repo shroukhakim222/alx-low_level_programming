@@ -18,15 +18,15 @@ void print_triangle(int size)
 	{
 		for (i = 1; i <= size; i++)
 		{
-			y = i;
-			for (j = size; j > 0; j--)
+			y = size - i;
+			for (j = 0; j < i; j++)
 			{
 				while (y > 0)
 				{
-					_putchar('3');
+					_putchar(' ');
 					y--;
 				}
-				_putchar(' ');
+				_putchar('#');
 			}
 			putchar('\n');
 		}
