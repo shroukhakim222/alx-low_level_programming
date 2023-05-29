@@ -25,10 +25,10 @@ int _atoi(char *s)
 			res = (res * 10) + (s[i] - '0');
 			i++;
 		}
-		else if (s[i] == ';')
-			break;
-		else
+		else if (s[i] != ';')
 			i++;
+		else
+			break;
 	}
 	return (sign * res);
 }
