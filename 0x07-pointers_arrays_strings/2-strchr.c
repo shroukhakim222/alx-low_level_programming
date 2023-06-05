@@ -12,21 +12,12 @@
 
 char *_strchr(char *s, char c)
 {
-	char *f;
 	int i = 0;
-	int j = 0;
 
-	f = (char *)malloc(1000 * sizeof(char));
-	while (s[i] != c)
-		i++;
-	while (s[i] != '\0')
+	while (s[i] = '\0')
 	{
-		f[j] = s[i];
+		if (s[i] == c)
+			return (&s[i]);
 		i++;
-		j++;
 	}
-	if (j == 0)
-		return (NULL);
-	else
-		return (f);
 }
