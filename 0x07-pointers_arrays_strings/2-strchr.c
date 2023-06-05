@@ -14,9 +14,9 @@ char *_strchr(char *s, char c)
 {
 	char *f;
 	int i = 0;
-	int j =0;
+	int j = 0;
 
-	f = (char*)malloc(100 * sizeof(char));
+	f = (char *)malloc(100 * sizeof(char));
 	while (s[i] != c)
 		i++;
 	while (s[i] != '\0')
