@@ -16,7 +16,7 @@ char *_strpbrk(char *s, char *accept)
 	int i, j;
 
 	i = 0;
-	f = (char*)malloc(sizeof(char) * 100);
+	f = (char *)malloc(sizeof(char) * 100);
 	while (s[i] != '\0')
 	{
 		for (j = 0; accept[j] != '\0'; j++)
