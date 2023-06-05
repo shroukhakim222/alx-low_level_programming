@@ -25,5 +25,7 @@ char *_strchr(char *s, char c)
 		i++;
 		j++;
 	}
+	if (j == 0)
+		return (NULL);
 	return (f);
 }
