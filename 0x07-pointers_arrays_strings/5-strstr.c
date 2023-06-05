@@ -13,26 +13,19 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *f;
 	int i, j;
-	int y = 0;
 
-	i = 0;
-	f = (char*)malloc(sizeof(char) * 100);
-	while (haystack[i] != '\0')
+	for (i = 0; haystack[i] != '\0'; i++)
 	{
 		for (j = 0; needle[j] != '\0';)
 		{
 			if (haystack[i] == needle[j])
 			{
-				f[y] = haystack[i];
-				y++;
+				return (&haystack);
 				j++;
 			}
+			if (needle[j + 1] == '\0')
+				break;
 		}
-		i++;
 	}
-	if (y == 0)
-		return (NULL);
-	return (f);
 }
