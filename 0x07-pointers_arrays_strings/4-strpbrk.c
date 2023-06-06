@@ -17,9 +17,9 @@ char *_strpbrk(char *s, char *accept)
 
 	i = 0;
 	f = (char *)malloc(sizeof(char) * 100);
-	while (s[i] != '\0')
+	while (s[i] >= '\0')
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		for (j = 0; accept[j] >= '\0'; j++)
 		{
 			if (s[i] == accept[j])
 				break;
@@ -27,14 +27,11 @@ char *_strpbrk(char *s, char *accept)
 		i++;
 	}
 	j = 0;
-	while (s[i] != '\0')
+	while (s[i] >= '\0')
 	{
 		f[j] = s[i];
 		j++;
 		i++;
 	}
-	if (j == 0)
-		return (NULL);
-	else
-		return (f);
+	return (f);
 }
