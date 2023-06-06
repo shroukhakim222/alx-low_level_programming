@@ -12,26 +12,15 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *f;
 	int i, j;
 
-	i = 0;
-	f = (char *)malloc(sizeof(char) * 100);
-	while (s[i] >= '\0')
+	for (i = 0; s[i] >= '\0'; i++)
 	{
-		for (j = 0; accept[j] >= '\0'; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
-				break;
+				return (&s[i]);
 		}
-		i++;
 	}
-	j = 0;
-	while (s[i] >= '\0')
-	{
-		f[j] = s[i];
-		j++;
-		i++;
-	}
-	return (f);
+	return (0);
 }
