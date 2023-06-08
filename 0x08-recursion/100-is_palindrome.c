@@ -36,7 +36,7 @@ int len_recursion(char *s)
 }
 
 /**
- * true_recursion - check if string is palindrome
+ * true_palindrome - check if string is palindrome
  * @s: string
  * @len: length of string
  * @i: increasing indes
