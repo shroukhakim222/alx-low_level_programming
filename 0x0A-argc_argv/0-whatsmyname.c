@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * main - print program name
+ * @argc: command count
+ * @argv: command array
  *
  * Return: always.
  */
