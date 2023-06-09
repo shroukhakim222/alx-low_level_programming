@@ -35,6 +35,11 @@ int main(int argc, char *argv[])
 		i -= 5;
 		count++;
 	}
+	while (i - 2 >= 0)
+	{
+		i -= 2;
+		count++;
+	}
 	while (i - 1 >= 0)
 	{
 		i -= 1;
