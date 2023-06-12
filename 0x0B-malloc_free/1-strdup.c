@@ -20,6 +20,8 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 	ptr = malloc(sizeof(char) * size + 1);
+	if (ptr == NULL)
+		return (NULL);
 	for (i = 0; i < size; i++)
 		ptr[i] = str[i];
 	ptr[i] = '\0';
