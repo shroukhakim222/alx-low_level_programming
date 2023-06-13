@@ -29,5 +29,5 @@ char *argstostr(int ac, char **av)
 		if (arg[k] == '\0')
 			arg[k++] = '\n';
 	}
-	return (str);
+	return (arg);
 }
