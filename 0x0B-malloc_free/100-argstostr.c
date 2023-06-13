@@ -22,12 +22,12 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != " "; j++)
+		for (j = 0; av[i][j]; j++)
 		{
 			arg[k] = av[i][j];
 		}
 		if (arg[k] == '\0')
-			str[k++] = '\n';
+			arg[k++] = '\n';
 	}
 	return (str);
 }
