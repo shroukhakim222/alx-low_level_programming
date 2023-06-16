@@ -15,7 +15,7 @@ int _strlen(char *s);
 
 int main(int argc, char *argv[])
 {
-	int i, len1, len2, len, carry, digit1, digit2, a;
+	int i, len1, len2, len, carry, digit1, digit2, a = 0;
 	char *s1, *s2;
 	int *mul;
 
@@ -36,11 +36,11 @@ int main(int argc, char *argv[])
 		mul[i] = 0;
 	for (len1 = len1 - 1; len1 >= 0; len1--)
 	{
-		digit1 = s1[len1];
+		digit1 = s1[len1] - '0';
 		carry = 0;
 		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 		{
-			digit2 = s2[len2];
+			digit2 = s2[len2] - '0';
 			carry += mul[len1 + len2 + 1] + (digit1 * digit2);
 			mul[len1 + len2 + 1] = carry % 10;
 			carry /= 10;
