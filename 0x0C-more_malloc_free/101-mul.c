@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 	{
 		if (mul[i])
 			a = 1;
-		if(a)
+		if (a)
 			_putchar(mul[i] + '0');
 	}
 	if (!a)
