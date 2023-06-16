@@ -76,7 +76,7 @@ int is_digit(char *s)
 	len = _strlen(s);
 	for (i = 0; i < len; i++)
 	{
-		if (s[i] >= '0' && s[i] <= '9')
+		if (s[i] < '0' || s[i] > '9')
 		{
 			return (0);
 		}
