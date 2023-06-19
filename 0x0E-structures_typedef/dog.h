@@ -1,5 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
+#include <stdio.h>
 
 /**
  * struct dog - structure for dog information
@@ -7,8 +8,7 @@
  * @age: age of the dog
  * @owner: name of the ownerr
  */
-
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
