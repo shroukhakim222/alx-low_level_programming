@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 void print_bef(void) __attribute__ ((constructor));
 
