@@ -10,7 +10,7 @@
 
 void print_binary(unsigned long int n)
 {
-	int i;
+	int i, j = 0;
 	unsigned long int k;
 
 	for (i = 63; i >= 0; i--)
@@ -18,9 +18,12 @@ void print_binary(unsigned long int n)
 		k = n >> i;
 		if (k & 1)
 		{
-			putchar('1');
+			_putchar('1');
+			j++;
 		}
-		else
-			putchar('0');
+		else if (j)
+			_putchar('0');
 	}
+	if (!j)
+		_putchar('0');
 }
