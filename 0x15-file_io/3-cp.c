@@ -17,6 +17,7 @@ char *create_buff(char *file)
 			"Error: Can't write to %s\n", file);
 		exit(99);
 	}
+	return (buff);
 }
 
 /**
@@ -84,4 +85,3 @@ int main(int argc, char *argv[])
 	close_file(t);
 	return (0);
 }
-
